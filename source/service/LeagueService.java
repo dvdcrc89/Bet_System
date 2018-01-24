@@ -14,4 +14,9 @@ public class LeagueService extends AbstractHibernateService<League, String, Leag
 	public League findLeagueByYear(int year, String leagueName) {
 		return dao.findLeagueByYear(year, leagueName);
 	}
+
+	@Transactional(readOnly = true)
+	public League findLeagueByMatchDay(int year, String leagueName, int numberMatchDay) {
+		return dao.findLeagueByMatchDay(year, leagueName, numberMatchDay);
+	}
 }
