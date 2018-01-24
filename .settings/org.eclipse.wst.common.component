@@ -2,8 +2,6 @@
     <wb-module deploy-name="bet_system">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/source"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
         <property name="context-root" value="bet_system"/>
         <property name="java-output-path" value="/bet_system/build/classes"/>
     </wb-module>
