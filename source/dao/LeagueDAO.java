@@ -33,7 +33,7 @@ public class LeagueDAO extends AbstractHibernateDAO<League, String> {
 
 		return findByCriteria(criterions, orders).get(0);
 	}
-	
+
 	public League findLeagueByMatchDay(int year, String leagueName, int numberMatchDay) {
 
 		List<Criterion> criterions = new ArrayList<Criterion>();
