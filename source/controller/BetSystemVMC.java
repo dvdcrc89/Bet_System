@@ -22,12 +22,11 @@ public class BetSystemVMC {
 	@Autowired
 	TableService tableService;
 
-	@RequestMapping(value = "/table/{year}/{league}/{matchday}", method = RequestMethod.POST)
+	@RequestMapping(value = "/table/{year}/{league}", method = RequestMethod.POST)
 	@ResponseBody
-	public String tableByMatchDay(@PathVariable(value = "year") final int year,
-			@PathVariable(value = "league") final String leagueName,
-			@PathVariable(value = "matchday") final int numberMatchDay) throws Exception {
-		table = tableService.findTableByMatchDay(year, leagueName, numberMatchDay);
+	public String tableByYear(@PathVariable(value = "year") final int year,
+			@PathVariable(value = "league") final String leagueName) throws Exception {
+		table = tableService.findTableByYear(year, leagueName);
 		return mapper.writeValueAsString(table);
 	}
 }
