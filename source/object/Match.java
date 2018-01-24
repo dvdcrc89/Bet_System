@@ -11,19 +11,18 @@ public class Match implements Serializable {
 	private String time;
 	private String home;
 	private String away;
-	private int goalHome;
-	private int goalAway;
 	private Team teamHome;
 	private Team teamAway;
+	private int goalHome;
+	private int goalAway;
 
-	public Match() {
-		super();
-	}
     public Match(String home, String away, int goalHome, int goalAway) {
         this.home = home;
         this.away = away;
         this.goalHome = goalHome;
         this.goalAway = goalAway;
+        teamAway =new Team(away);
+        teamHome = new Team(home);
     }
 
     public Match(Team teamHome, Team teamAway, int goalHome, int goalAway) {
@@ -80,67 +79,68 @@ public class Match implements Serializable {
     }
 
     public String getIdMatch() {
-		return idMatch;
-	}
+        return idMatch;
+    }
 
-	public void setIdMatch(String idMatch) {
-		this.idMatch = idMatch;
-	}
+    public void setIdMatch(String idMatch) {
+        this.idMatch = idMatch;
+    }
 
-	public String getIdMatchDay() {
-		return idMatchDay;
-	}
+    public String getIdMatchDay() {
+        return idMatchDay;
+    }
 
-	public void setIdMatchDay(String idMatchDay) {
-		this.idMatchDay = idMatchDay;
-	}
+    public void setIdMatchDay(String idMatchDay) {
+        this.idMatchDay = idMatchDay;
+    }
 
-	public String getDate() {
-		return date;
-	}
+    public String getDate() {
+        return date;
+    }
 
-	public void setDate(String date) {
-		this.date = date;
-	}
+    public void setDate(String date) {
+        this.date = date;
+    }
 
-	public String getTime() {
-		return time;
-	}
+    public String getTime() {
+        return time;
+    }
 
-	public void setTime(String time) {
-		this.time = time;
-	}
+    public void setTime(String time) {
+        this.time = time;
+    }
 
-	public String gethome() {
-		return home;
-	}
+    public String gethome() {
+        return home;
+    }
 
-	public void sethome(String home) {
-		this.home = home;
-	}
+    public void sethome(String home) {
+        this.home = home;
+    }
 
-	public String getaway() {
-		return away;
-	}
+    public String getaway() {
+        return away;
+    }
 
-	public void setaway(String away) {
-		this.away = away;
-	}
+    public void setaway(String away) {
+        this.away = away;
+    }
 
-	public int getGoalHome() {
-		return goalHome;
-	}
+    public int getGoalHome() {
+        return goalHome;
+    }
 
-	public void setGoalHome(int goalHome) {
-		this.goalHome = goalHome;
-	}
+    public void setGoalHome(int goalHome) {
+        this.goalHome = goalHome;
+    }
 
-	public int getGoalAway() {
-		return goalAway;
-	}
+    public int getGoalAway() {
+        return goalAway;
+    }
 
-	public void setGoalAway(int goalAway) {
-		this.goalAway = goalAway;
-	}
+    public void setGoalAway(int goalAway) {
+        this.goalAway = goalAway;
+    }
 
 }
+

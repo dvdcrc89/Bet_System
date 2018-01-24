@@ -11,7 +11,7 @@ public class League implements Serializable {
 	private String nation;
 	private int yearStart;
 	private int yearEnd;
-	private ArrayList<MatchDay> matchDays;
+	private ArrayList<Match> matches;
 
 	public League() {
 		super();
@@ -57,12 +57,12 @@ public class League implements Serializable {
 		this.yearEnd = yearEnd;
 	}
 
-	public ArrayList<MatchDay> getMatchDays() {
-		return matchDays;
+	public ArrayList<Match> getMatches() {
+		return matches;
 	}
 
-	public void setMatchDays(ArrayList<MatchDay> matchDays) {
-		this.matchDays = matchDays;
+	public void setMatches(ArrayList<Match> matchDays) {
+		this.matches = matchDays;
 	}
 
 }

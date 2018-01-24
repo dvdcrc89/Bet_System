@@ -2,7 +2,12 @@ package object;
 
 import com.sun.istack.internal.NotNull;
 
-public class Team implements Comparable{
+import java.io.Serializable;
+import java.util.Collection;
+
+public class Team implements Serializable,Comparable {
+
+	private static final long serialVersionUID = -3942570304764550707L;
 
     private String name;
     private int points;
@@ -307,25 +312,25 @@ public class Team implements Comparable{
     public String toString() {
         return
                 name  +
-                " " + points +
-                " " + matchPlayed +
-                " " + won +
-                " " + lost +
-                " " + tie +
-                " " + goalF +
-                ":" + goalS +
-                " " + matchPlayedHome +
-                " " + wonHome +
-                " " + lostHome +
-                " " + tieHome +
-                " " + goalFHome +
-                ":" + goalSHome +
-                " " + matchPlayedAway +
-                " " + wonAway +
-                " " + lostAway +
-                " " + tieAway +
-                " " + goalFAway +
-                ":" + goalSAway+"\n"
+                        " " + points +
+                        " " + matchPlayed +
+                        " " + won +
+                        " " + lost +
+                        " " + tie +
+                        " " + goalF +
+                        ":" + goalS +
+                        " " + matchPlayedHome +
+                        " " + wonHome +
+                        " " + lostHome +
+                        " " + tieHome +
+                        " " + goalFHome +
+                        ":" + goalSHome +
+                        " " + matchPlayedAway +
+                        " " + wonAway +
+                        " " + lostAway +
+                        " " + tieAway +
+                        " " + goalFAway +
+                        ":" + goalSAway+"\n"
                 ;
     }
 

@@ -1,0 +1,340 @@
+Giornata 34
+14.05. 00:00	Bari	Bologna	1 : 1		
+14.05. 00:00	Cagliari	Inter	0 : 2		
+14.05. 00:00	Fiorentina	Venezia	3 : 0		
+14.05. 00:00	Lazio	Reggina  	3 : 0		
+14.05. 00:00	Milan	Udinese	4 : 0		
+14.05. 00:00	Parma	Lecce	4 : 1		
+14.05. 00:00	Perugia	Juventus	1 : 0		
+14.05. 00:00	Torino	Piacenza	2 : 1		
+14.05. 00:00	Verona	Roma	2 : 2		
+Giornata 33
+07.05. 00:00	Bologna	Lazio	2 : 3		
+07.05. 00:00	Inter	Fiorentina	0 : 4		
+07.05. 00:00	Juventus	Parma	1 : 0		
+07.05. 00:00	Lecce	Torino	2 : 1		
+07.05. 00:00	Piacenza	Cagliari	1 : 1		
+07.05. 00:00	Reggina  	Verona	1 : 1		
+07.05. 00:00	Roma	Milan	1 : 1		
+07.05. 00:00	Udinese	Perugia	2 : 1		
+07.05. 00:00	Venezia	Bari	0 : 1		
+Giornata 32
+30.04. 00:00	Bari	Roma	0 : 0		
+30.04. 00:00	Cagliari	Bologna	2 : 2		
+30.04. 00:00	Fiorentina	Lecce	3 : 0		
+30.04. 00:00	Lazio	Venezia	3 : 2		
+30.04. 00:00	Milan	Piacenza	1 : 0		
+30.04. 00:00	Parma	Udinese	0 : 0		
+30.04. 00:00	Perugia	Inter	1 : 2		
+30.04. 00:00	Torino	Reggina  	2 : 1		
+30.04. 00:00	Verona	Juventus	2 : 0		
+Giornata 31
+22.04. 00:00	Bologna	Perugia	2 : 1		
+22.04. 00:00	Inter	Bari	3 : 0		
+22.04. 00:00	Juventus	Fiorentina	1 : 0		
+22.04. 00:00	Lecce	Cagliari	2 : 1		
+22.04. 00:00	Piacenza	Lazio	0 : 2		
+22.04. 00:00	Reggina  	Milan	1 : 2		
+22.04. 00:00	Roma	Parma	0 : 0		
+22.04. 00:00	Udinese	Torino	0 : 0		
+22.04. 00:00	Venezia	Verona	2 : 2		
+Giornata 30
+16.04. 00:00	Bari	Lecce	3 : 1		
+16.04. 00:00	Cagliari	Reggina  	0 : 1		
+16.04. 00:00	Inter	Juventus	1 : 2		
+16.04. 00:00	Parma	Venezia	3 : 1		
+16.04. 00:00	Perugia	Piacenza	2 : 0		
+16.04. 00:00	Roma	Bologna	2 : 0		
+16.04. 00:00	Torino	Milan	2 : 2		
+15.04. 00:00	Fiorentina	Lazio	3 : 3		
+15.04. 00:00	Verona	Udinese	2 : 2		
+Giornata 29
+09.04. 00:00	Bologna	Juventus	0 : 2		
+09.04. 00:00	Cagliari	Verona	0 : 1		
+09.04. 00:00	Lazio	Perugia	1 : 0		
+09.04. 00:00	Lecce	Roma	0 : 0		
+09.04. 00:00	Milan	Fiorentina	1 : 1		
+09.04. 00:00	Piacenza	Bari	2 : 1		
+09.04. 00:00	Reggina  	Venezia	1 : 0		
+08.04. 00:00	Torino	Parma	2 : 2		
+08.04. 00:00	Udinese	Inter	3 : 0		
+Giornata 28
+02.04. 00:00	Bari	Cagliari	1 : 0		
+02.04. 00:00	Inter	Reggina  	1 : 1		
+02.04. 00:00	Parma	Milan	1 : 0		
+02.04. 00:00	Perugia	Torino	1 : 0		
+02.04. 00:00	Roma	Udinese	1 : 1		
+02.04. 00:00	Venezia	Lecce	0 : 0		
+02.04. 00:00	Verona	Piacenza	1 : 0		
+01.04. 00:00	Fiorentina	Bologna	2 : 2		
+01.04. 00:00	Juventus	Lazio	0 : 1		
+Giornata 27
+25.03. 00:00	Bologna	Udinese	2 : 1		
+25.03. 00:00	Cagliari	Parma	2 : 3		
+25.03. 00:00	Lazio	Roma	2 : 1		
+25.03. 00:00	Lecce	Inter	1 : 0		
+25.03. 00:00	Perugia	Fiorentina	1 : 2		
+25.03. 00:00	Piacenza	Venezia	2 : 2		
+25.03. 00:00	Reggina  	Bari	1 : 0		
+25.03. 00:00	Torino	Verona	0 : 3		
+24.03. 00:00	Milan	Juventus	2 : 0		
+Giornata 26
+19.03. 00:00	Bari	Perugia	0 : 2		
+19.03. 00:00	Juventus	Torino	3 : 2		
+19.03. 00:00	Parma	Piacenza	1 : 0		
+19.03. 00:00	Roma	Reggina  	0 : 2		
+19.03. 00:00	Udinese	Lecce	2 : 1		
+19.03. 00:00	Venezia	Milan	1 : 0		
+19.03. 00:00	Verona	Lazio	1 : 0		
+18.03. 00:00	Fiorentina	Cagliari	2 : 0		
+18.03. 00:00	Inter	Bologna	1 : 1		
+Giornata 25
+12.03. 00:00	Bari	Parma	0 : 1		
+12.03. 00:00	Cagliari	Roma	1 : 0		
+12.03. 00:00	Milan	Verona	3 : 3		
+12.03. 00:00	Perugia	Lecce	2 : 2		
+12.03. 00:00	Piacenza	Juventus	0 : 2		
+12.03. 00:00	Reggina  	Udinese	0 : 0		
+12.03. 00:00	Torino	Fiorentina	1 : 0		
+11.03. 00:00	Bologna	Venezia	1 : 1		
+11.03. 00:00	Lazio	Inter	2 : 2		
+Giornata 24
+05.03. 00:00	Juventus	Bari	2 : 0		
+05.03. 00:00	Lecce	Lazio	0 : 1		
+05.03. 00:00	Milan	Inter	1 : 2		
+05.03. 00:00	Parma	Reggina  	3 : 0		
+05.03. 00:00	Roma	Torino	1 : 0		
+05.03. 00:00	Venezia	Perugia	1 : 2		
+05.03. 00:00	Verona	Bologna	0 : 0		
+04.03. 00:00	Fiorentina	Piacenza	2 : 1		
+04.03. 00:00	Udinese	Cagliari	5 : 2		
+Giornata 23
+27.02. 00:00	Bari	Torino	1 : 1		
+27.02. 00:00	Bologna	Piacenza	0 : 0		
+27.02. 00:00	Cagliari	Milan	0 : 0		
+27.02. 00:00	Inter	Venezia	3 : 0		
+27.02. 00:00	Juventus	Roma	2 : 1		
+27.02. 00:00	Perugia	Verona	0 : 0		
+27.02. 00:00	Reggina  	Lecce	2 : 1		
+26.02. 00:00	Lazio	Udinese	2 : 1		
+26.02. 00:00	Parma	Fiorentina	0 : 4		
+Giornata 22
+20.02. 00:00	Lecce	Bologna	1 : 1		
+20.02. 00:00	Milan	Lazio	2 : 1		
+20.02. 00:00	Piacenza	Inter	1 : 3		
+20.02. 00:00	Torino	Cagliari	1 : 1		
+20.02. 00:00	Udinese	Bari	5 : 1		
+20.02. 00:00	Venezia	Juventus	0 : 4		
+20.02. 00:00	Verona	Parma	4 : 3		
+19.02. 00:00	Reggina  	Perugia	1 : 1		
+19.02. 00:00	Roma	Fiorentina	4 : 0		
+Giornata 21
+13.02. 00:00	Fiorentina	Udinese	1 : 1		
+13.02. 00:00	Inter	Torino	1 : 1		
+13.02. 00:00	Juventus	Lecce	1 : 0		
+13.02. 00:00	Lazio	Parma	0 : 0		
+13.02. 00:00	Perugia	Roma	2 : 2		
+13.02. 00:00	Piacenza	Reggina  	0 : 0		
+13.02. 00:00	Venezia	Cagliari	3 : 0		
+12.02. 00:00	Bari	Verona	1 : 1		
+12.02. 00:00	Bologna	Milan	2 : 3		
+Giornata 20
+06.02. 00:00	Lecce	Piacenza	0 : 1		
+06.02. 00:00	Milan	Bari	4 : 1		
+06.02. 00:00	Parma	Inter	1 : 1		
+06.02. 00:00	Reggina  	Bologna	1 : 0		
+06.02. 00:00	Roma	Venezia	5 : 0		
+06.02. 00:00	Torino	Lazio	2 : 4		
+06.02. 00:00	Verona	Fiorentina	2 : 2		
+05.02. 00:00	Cagliari	Perugia	2 : 1		
+05.02. 00:00	Udinese	Juventus	1 : 1		
+Giornata 19
+30.01. 00:00	Bologna	Parma	1 : 0		
+30.01. 00:00	Fiorentina	Reggina  	1 : 0		
+30.01. 00:00	Inter	Roma	2 : 1		
+30.01. 00:00	Juventus	Cagliari	1 : 1		
+30.01. 00:00	Lazio	Bari	3 : 1		
+30.01. 00:00	Perugia	Milan	0 : 3		
+30.01. 00:00	Venezia	Torino	2 : 2		
+29.01. 00:00	Lecce	Verona	2 : 1		
+29.01. 00:00	Piacenza	Udinese	0 : 1		
+Giornata 18
+23.01. 00:00	Bari	Fiorentina	1 : 0		
+23.01. 00:00	Milan	Lecce	2 : 2		
+23.01. 00:00	Parma	Perugia	1 : 2		
+23.01. 00:00	Reggina  	Juventus	0 : 2		
+23.01. 00:00	Torino	Bologna	2 : 1		
+23.01. 00:00	Udinese	Venezia	5 : 2		
+23.01. 00:00	Verona	Inter	1 : 2		
+22.01. 00:00	Cagliari	Lazio	0 : 0		
+22.01. 00:00	Roma	Piacenza	2 : 1		
+Giornata 17
+16.01. 00:00	Inter	Cagliari	2 : 1		
+16.01. 00:00	Juventus	Perugia	3 : 0		
+16.01. 00:00	Lecce	Parma	0 : 0		
+16.01. 00:00	Piacenza	Torino	0 : 2		
+16.01. 00:00	Reggina  	Lazio	0 : 0		
+16.01. 00:00	Roma	Verona	3 : 1		
+16.01. 00:00	Udinese	Milan	1 : 2		
+15.01. 00:00	Bologna	Bari	1 : 0		
+15.01. 00:00	Venezia	Fiorentina	2 : 1		
+Giornata 16
+09.01. 00:00	Bari	Venezia	3 : 0		
+09.01. 00:00	Cagliari	Piacenza	3 : 0		
+09.01. 00:00	Fiorentina	Inter	2 : 1		
+09.01. 00:00	Lazio	Bologna	3 : 1		
+09.01. 00:00	Milan	Roma	2 : 2		
+09.01. 00:00	Parma	Juventus	1 : 1		
+09.01. 00:00	Perugia	Udinese	0 : 5		
+09.01. 00:00	Torino	Lecce	1 : 2		
+09.01. 00:00	Verona	Reggina  	1 : 1		
+Giornata 15
+06.01. 00:00	Bologna	Cagliari	1 : 0		
+06.01. 00:00	Inter	Perugia	5 : 0		
+06.01. 00:00	Juventus	Verona	1 : 0		
+06.01. 00:00	Lecce	Fiorentina	0 : 0		
+06.01. 00:00	Piacenza	Milan	0 : 1		
+06.01. 00:00	Reggina  	Torino	2 : 1		
+06.01. 00:00	Roma	Bari	3 : 1		
+06.01. 00:00	Udinese	Parma	0 : 1		
+05.01. 00:00	Venezia	Lazio	2 : 0		
+Giornata 14
+19.12. 00:00	Cagliari	Lecce	0 : 0		
+19.12. 00:00	Fiorentina	Juventus	1 : 1		
+19.12. 00:00	Lazio	Piacenza	2 : 0		
+19.12. 00:00	Milan	Reggina  	2 : 2		
+19.12. 00:00	Parma	Roma	2 : 0		
+19.12. 00:00	Perugia	Bologna	3 : 2		
+19.12. 00:00	Torino	Udinese	0 : 1		
+18.12. 00:00	Bari	Inter	2 : 1		
+18.12. 00:00	Verona	Venezia	1 : 0		
+Giornata 13
+12.12. 00:00	Bologna	Roma	1 : 0		
+12.12. 00:00	Juventus	Inter	1 : 0		
+12.12. 00:00	Lazio	Fiorentina	2 : 0		
+12.12. 00:00	Piacenza	Perugia	0 : 0		
+12.12. 00:00	Reggina  	Cagliari	1 : 1		
+12.12. 00:00	Udinese	Verona	3 : 3		
+12.12. 00:00	Venezia	Parma	0 : 2		
+11.12. 00:00	Lecce	Bari	1 : 0		
+11.12. 00:00	Milan	Torino	2 : 0		
+Giornata 12
+05.12. 00:00	Bari	Piacenza	3 : 2		
+05.12. 00:00	Fiorentina	Milan	2 : 1		
+05.12. 00:00	Inter	Udinese	3 : 0		
+05.12. 00:00	Parma	Torino	4 : 1		
+05.12. 00:00	Roma	Lecce	3 : 2		
+05.12. 00:00	Venezia	Reggina  	2 : 0		
+05.12. 00:00	Verona	Cagliari	2 : 0		
+04.12. 00:00	Juventus	Bologna	2 : 0		
+04.12. 00:00	Perugia	Lazio	0 : 2		
+Giornata 11
+28.11. 00:00	Cagliari	Bari	2 : 3		
+28.11. 00:00	Lazio	Juventus	0 : 0		
+28.11. 00:00	Lecce	Venezia	2 : 1		
+28.11. 00:00	Milan	Parma	2 : 1		
+28.11. 00:00	Reggina  	Inter	0 : 1		
+28.11. 00:00	Torino	Perugia	0 : 1		
+28.11. 00:00	Udinese	Roma	0 : 2		
+27.11. 00:00	Bologna	Fiorentina	0 : 0		
+27.11. 00:00	Piacenza	Verona	1 : 0		
+Giornata 10
+21.11. 00:00	Bari	Reggina  	1 : 1		
+21.11. 00:00	Inter	Lecce	6 : 0		
+21.11. 00:00	Juventus	Milan	3 : 1		
+21.11. 00:00	Parma	Cagliari	3 : 1		
+21.11. 00:00	Roma	Lazio	4 : 1		
+21.11. 00:00	Venezia	Piacenza	0 : 0		
+21.11. 00:00	Verona	Torino	0 : 1		
+20.11. 00:00	Fiorentina	Perugia	1 : 0		
+20.11. 00:00	Udinese	Bologna	2 : 1		
+Giornata 9
+07.11. 00:00	Bologna	Inter	3 : 0		
+07.11. 00:00	Lazio	Verona	4 : 0		
+07.11. 00:00	Lecce	Udinese	1 : 0		
+07.11. 00:00	Milan	Venezia	3 : 0		
+07.11. 00:00	Piacenza	Parma	1 : 2		
+07.11. 00:00	Reggina  	Roma	0 : 4		
+07.11. 00:00	Torino	Juventus	0 : 0		
+06.11. 00:00	Cagliari	Fiorentina	1 : 1		
+06.11. 00:00	Perugia	Bari	1 : 2		
+Giornata 8
+31.10. 00:00	Juventus	Piacenza	1 : 0		
+31.10. 00:00	Lecce	Perugia	0 : 1		
+31.10. 00:00	Parma	Bari	2 : 1		
+31.10. 00:00	Roma	Cagliari	2 : 2		
+31.10. 00:00	Udinese	Reggina  	3 : 2		
+31.10. 00:00	Verona	Milan	0 : 0		
+30.10. 00:00	Fiorentina	Torino	1 : 1		
+30.10. 00:00	Inter	Lazio	1 : 1		
+30.10. 00:00	Venezia	Bologna	0 : 1		
+Giornata 7
+24.10. 00:00	Bari	Juventus	1 : 1		
+24.10. 00:00	Bologna	Verona	0 : 0		
+24.10. 00:00	Cagliari	Udinese	0 : 3		
+24.10. 00:00	Lazio	Lecce	4 : 2		
+24.10. 00:00	Piacenza	Fiorentina	2 : 0		
+24.10. 00:00	Reggina  	Parma	2 : 2		
+24.10. 00:00	Torino	Roma	1 : 1		
+23.10. 00:00	Inter	Milan	1 : 2		
+23.10. 00:00	Perugia	Venezia	2 : 1		
+Giornata 6
+17.10. 00:00	Lecce	Reggina  	2 : 1		
+17.10. 00:00	Milan	Cagliari	2 : 2		
+17.10. 00:00	Piacenza	Bologna	0 : 0		
+17.10. 00:00	Roma	Juventus	0 : 1		
+17.10. 00:00	Torino	Bari	3 : 1		
+17.10. 00:00	Venezia	Inter	1 : 0		
+17.10. 00:00	Verona	Perugia	2 : 0		
+16.10. 00:00	Fiorentina	Parma	0 : 2		
+16.10. 00:00	Udinese	Lazio	0 : 3		
+Giornata 5
+03.10. 00:00	Bari	Udinese	1 : 1		
+03.10. 00:00	Bologna	Lecce	2 : 0		
+03.10. 00:00	Fiorentina	Roma	1 : 3		
+03.10. 00:00	Juventus	Venezia	1 : 0		
+03.10. 00:00	Lazio	Milan	4 : 4		
+03.10. 00:00	Parma	Verona	3 : 0		
+03.10. 00:00	Perugia	Reggina  	2 : 1		
+02.10. 00:00	Cagliari	Torino	1 : 1		
+02.10. 00:00	Inter	Piacenza	2 : 1		
+Giornata 4
+26.09. 00:00	Cagliari	Venezia	1 : 1		
+26.09. 00:00	Parma	Lazio	1 : 2		
+26.09. 00:00	Reggina  	Piacenza	1 : 0		
+26.09. 00:00	Roma	Perugia	3 : 1		
+26.09. 00:00	Torino	Inter	0 : 1		
+26.09. 00:00	Udinese	Fiorentina	1 : 1		
+26.09. 00:00	Verona	Bari	0 : 1		
+25.09. 00:00	Lecce	Juventus	2 : 0		
+25.09. 00:00	Milan	Bologna	4 : 0		
+Giornata 3
+19.09. 00:00	Bologna	Reggina  	0 : 1		
+19.09. 00:00	Fiorentina	Verona	4 : 1		
+19.09. 00:00	Inter	Parma	5 : 1		
+19.09. 00:00	Juventus	Udinese	4 : 1		
+19.09. 00:00	Lazio	Torino	3 : 0		
+19.09. 00:00	Piacenza	Lecce	1 : 1		
+19.09. 00:00	Venezia	Roma	1 : 3		
+18.09. 00:00	Bari	Milan	1 : 1		
+18.09. 00:00	Perugia	Cagliari	3 : 0		
+Giornata 2
+12.09. 00:00	Cagliari	Juventus	0 : 1		
+12.09. 00:00	Milan	Perugia	3 : 1		
+12.09. 00:00	Parma	Bologna	1 : 1		
+12.09. 00:00	Roma	Inter	0 : 0		
+12.09. 00:00	Torino	Venezia	2 : 1		
+12.09. 00:00	Verona	Lecce	2 : 0		
+11.09. 00:00	Bari	Lazio	0 : 0		
+11.09. 00:00	Reggina  	Fiorentina	2 : 2		
+11.09. 00:00	Udinese	Piacenza	3 : 0		
+Giornata 1
+30.08. 00:00	Lazio	Cagliari	2 : 1		
+29.08. 00:00	Fiorentina	Bari	1 : 0		
+29.08. 00:00	Inter	Verona	3 : 0		
+29.08. 00:00	Juventus	Reggina  	1 : 1		
+29.08. 00:00	Lecce	Milan	2 : 2		
+29.08. 00:00	Perugia	Parma	1 : 1		
+29.08. 00:00	Piacenza	Roma	1 : 1		
+29.08. 00:00	Venezia	Udinese	1 : 1		
+28.08. 00:00	Bologna	Torino	0 : 0
