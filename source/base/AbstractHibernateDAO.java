@@ -193,37 +193,4 @@ public abstract class AbstractHibernateDAO<T, ID extends Serializable> {
 		return sessionFactory.getCurrentSession();
 	}
 
-	// protected final String sysDate() {
-	//
-	// if (ApplicationContext.getDatabase().isOracle()) {
-	// return "SYSDATE";
-	// } else if (ApplicationContext.getDatabase().isPostgreSQL()) {
-	// return "CURRENT_DATE";
-	// } else if (ApplicationContext.getDatabase().isSQLServer()) {
-	// return "GETDATE()";
-	// } else if (ApplicationContext.getDatabase().isMySQL()) {
-	// return "CURRENT_DATE()";
-	// } else {
-	// return "";
-	// }
-	// }
-	//
-	// protected String concat(String... values) {
-	//
-	// StringList items = new StringList(values);
-	//
-	// if (ApplicationContext.getDatabase().isOracle()) {
-	// return items.join(" || ");
-	// } else if (ApplicationContext.getDatabase().isPostgreSQL()) {
-	// return items.join(" || ");
-	// } else if (ApplicationContext.getDatabase().isSQLServer()) {
-	// return items.join(" + ");
-	// } else if (ApplicationContext.getDatabase().isMySQL()) {
-	// return "CONCAT(" + items.join(",") + ") ";
-	// } else {
-	// return "";
-	// }
-	//
-	// }
-
 }

@@ -9,77 +9,16 @@ public class Match implements Serializable {
 	private String idMatchDay;
 	private String date;
 	private String time;
-	private String home;
-	private String away;
+	private String teamHome;
+	private String teamAway;
 	private int goalHome;
 	private int goalAway;
-	private Team teamHome;
-	private Team teamAway;
 
 	public Match() {
 		super();
 	}
-    public Match(String home, String away, int goalHome, int goalAway) {
-        this.home = home;
-        this.away = away;
-        this.goalHome = goalHome;
-        this.goalAway = goalAway;
-    }
 
-    public Match(Team teamHome, Team teamAway, int goalHome, int goalAway) {
-        this.teamHome = teamHome;
-        this.teamAway = teamAway;
-        this.goalHome = goalHome;
-        this.goalAway = goalAway;
-    }
-
-
-
-    public void updateTable(){
-        if (getResult()>0){
-            teamHome.hasWon(true);
-            teamAway.lost(false);
-
-        } else if (getResult()==-1){
-            teamAway.hasWon(false);
-            teamHome.lost(true);
-        } else if(getResult()==0){
-            teamAway.tie(false);
-            teamHome.tie(true);
-
-
-        }
-
-        teamHome.setGoal(goalHome,goalAway,true);
-        teamAway.setGoal(goalAway,goalHome,false);
-
-    }
-
-    public int getResult(){
-        if (getGoalHome()>getGoalAway()) return 1;
-        if (getGoalHome()<getGoalAway()) return -1;
-        if (getGoalHome()==getGoalAway()) return 0;
-        return -5;
-    }
-
-
-    public Team getTeamHome() {
-        return teamHome;
-    }
-
-    public void setTeamHome(Team teamHome) {
-        this.teamHome = teamHome;
-    }
-
-    public Team getTeamAway() {
-        return teamAway;
-    }
-
-    public void setTeamAway(Team teamAway) {
-        this.teamAway = teamAway;
-    }
-
-    public String getIdMatch() {
+	public String getIdMatch() {
 		return idMatch;
 	}
 
@@ -111,20 +50,20 @@ public class Match implements Serializable {
 		this.time = time;
 	}
 
-	public String gethome() {
-		return home;
+	public String getTeamHome() {
+		return teamHome;
 	}
 
-	public void sethome(String home) {
-		this.home = home;
+	public void setTeamHome(String teamHome) {
+		this.teamHome = teamHome;
 	}
 
-	public String getaway() {
-		return away;
+	public String getTeamAway() {
+		return teamAway;
 	}
 
-	public void setaway(String away) {
-		this.away = away;
+	public void setTeamAway(String teamAway) {
+		this.teamAway = teamAway;
 	}
 
 	public int getGoalHome() {

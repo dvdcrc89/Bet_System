@@ -14,45 +14,49 @@ import org.springframework.transaction.annotation.Transactional;
 public abstract class AbstractHibernateService<T, ID extends Serializable, DAO extends AbstractHibernateDAO<T, ID>> {
 
 	protected Logger logger = Logger.getLogger(this.getClass());
-	
+
 	@Autowired
 	protected DAO dao;
-	
+
 	@Transactional(readOnly = false)
-	public List<T> findByCriteria(List<Criterion> criterions, List<Order> orders, boolean exclusiveLock, String... fetchProperties) {
+	public List<T> findByCriteria(List<Criterion> criterions, List<Order> orders, boolean exclusiveLock,
+			String... fetchProperties) {
 		return dao.findByCriteria(criterions, orders, exclusiveLock, fetchProperties);
 	}
-	
+
 	@Transactional(readOnly = false)
-	public List<T> findByCriteria(List<Criterion> criterions, List<Order> orders, boolean exclusiveLock, Integer maxResults, String... fetchProperties) {
+	public List<T> findByCriteria(List<Criterion> criterions, List<Order> orders, boolean exclusiveLock,
+			Integer maxResults, String... fetchProperties) {
 		return dao.findByCriteria(criterions, orders, exclusiveLock, maxResults, null, fetchProperties);
 	}
-	
+
 	@Transactional(readOnly = true)
 	public List<T> findByCriteria(List<Criterion> criterions, List<Order> orders, String... fetchProperties) {
 		return dao.findByCriteria(criterions, orders, fetchProperties);
 	}
-	
+
 	@Transactional(readOnly = true)
-	public List<T> findByCriteria(List<Criterion> criterions, List<Order> orders, Integer maxResults, String... fetchProperties) {
+	public List<T> findByCriteria(List<Criterion> criterions, List<Order> orders, Integer maxResults,
+			String... fetchProperties) {
 		return dao.findByCriteria(criterions, orders, maxResults, fetchProperties);
 	}
-	
+
 	@Transactional(readOnly = true)
 	public List<T> findByCriteria(List<Criterion> criterions, String... fetchProperties) {
 		return dao.findByCriteria(criterions, fetchProperties);
 	}
-	
+
 	@Transactional(readOnly = true)
-	public List<T> findByCriteria(List<Criterion> criterions, Hashtable<String, String> aliases, String... fetchProperties) {
+	public List<T> findByCriteria(List<Criterion> criterions, Hashtable<String, String> aliases,
+			String... fetchProperties) {
 		return dao.findByCriteria(criterions, aliases, fetchProperties);
 	}
-	
+
 	@Transactional(readOnly = true)
 	public List<T> findByCriteria(List<Criterion> criterions, Integer maxResults, String... fetchProperties) {
 		return dao.findByCriteria(criterions, maxResults, fetchProperties);
 	}
-	
+
 	@Transactional(readOnly = true)
 	public List<T> findAll() {
 		return dao.findAll();
@@ -67,7 +71,7 @@ public abstract class AbstractHibernateService<T, ID extends Serializable, DAO e
 	public T findById(ID id, boolean exclusiveLock, String... fetchProperties) {
 		return dao.findById(id, exclusiveLock, fetchProperties);
 	}
-	
+
 	@Transactional(readOnly = true)
 	public T findById(ID id, String... fetchProperties) {
 		return dao.findById(id, fetchProperties);
