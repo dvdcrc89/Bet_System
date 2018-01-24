@@ -33,4 +33,17 @@ public class LeagueDAO extends AbstractHibernateDAO<League, String> {
 
 		return findByCriteria(criterions, orders).get(0);
 	}
+	
+	public League findLeagueByMatchDay(int year, String leagueName, int numberMatchDay) {
+
+		List<Criterion> criterions = new ArrayList<Criterion>();
+		criterions.add(Restrictions.eq("yearEnd", year));
+		criterions.add(Restrictions.eq("name", leagueName));
+		criterions.add(Restrictions.ge("matchday", numberMatchDay));
+
+		List<Order> orders = new ArrayList<Order>();
+		orders.add(Order.asc("matchday.number"));
+
+		return findByCriteria(criterions, orders).get(0);
+	}
 }
