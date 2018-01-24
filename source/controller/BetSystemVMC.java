@@ -41,7 +41,7 @@ public class BetSystemVMC {
 	@RequestMapping(value = "/table/{year}/{league}/{matchday}", method = RequestMethod.POST)
 	@ResponseBody
 	public HashMap<String, Team> teamsByYear(@PathVariable(value = "year") final int year,
-			@PathVariable(value = "league") final String leagueName,@PathVariable(value = "matchday") final String numberMatchday) throws Exception {
+			@PathVariable(value = "league") final String leagueName,@PathVariable(value = "matchday") final int numberMatchday) throws Exception {
 		teams = teamService.findTeamByMatchDay(year, leagueName, numberMatchday);
 		return teams;
 	}
