@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="org.thymeleaf:thymeleaf-testing:Release" type="repository">
+    <properties maven-id="org.thymeleaf:thymeleaf-testing:RELEASE" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf-testing/3.0.3.RELEASE/thymeleaf-testing-3.0.3.RELEASE.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.4.RELEASE/thymeleaf-3.0.4.RELEASE.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/unbescape/unbescape/1.1.4.RELEASE/unbescape-1.1.4.RELEASE.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/attoparser/attoparser/2.0.3.RELEASE/attoparser-2.0.3.RELEASE.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/ognl/ognl/3.0.11/ognl-3.0.11.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
