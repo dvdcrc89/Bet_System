@@ -1,9 +1,8 @@
 package controller;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -23,9 +22,12 @@ public class BetSystemVMC {
 	@Autowired
 	TableService tableService;
 
-	@RequestMapping(value = "/table/{league}/{year}/{matchday}", method = RequestMethod.POST)
+	@RequestMapping(value = "/table/{year}/{league}/{matchday}", method = RequestMethod.POST)
 	@ResponseBody
-	public String table(HttpServletRequest request) throws Exception {
+	public String tableByMatchDay(@PathVariable(value = "year") final int year,
+			@PathVariable(value = "league") final String leagueName,
+			@PathVariable(value = "matchday") final int numberMatchDay) throws Exception {
+		table = tableService.findTableByMatchDay(year, leagueName, numberMatchDay);
 		return mapper.writeValueAsString(table);
 	}
 }
