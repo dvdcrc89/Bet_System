@@ -2,9 +2,6 @@ package object;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collections;
-
-import com.sun.istack.internal.NotNull;
 
 public class Table implements Serializable {
 
