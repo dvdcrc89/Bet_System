@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import base.AbstractHibernateService;
-import base.UtilsTable;
+import base.MatchFactory;
 import dao.TableDAO;
 import object.League;
 import object.Table;
@@ -15,14 +15,11 @@ public class TableService extends AbstractHibernateService<Table, String, TableD
 
 	@Autowired
 	private LeagueService leagueService;
-	private Table table;
 
 	@Transactional(readOnly = true)
 	public Table findTableByMatchDay(int year, String leagueName, int numberMatchDay) {
-
 		League league = leagueService.findLeagueByMatchDay(year, leagueName, numberMatchDay);
-		table = UtilsTable.calucateTable(league);
-		return table;
+		return MatchFactory.calucateTable(league);
 	}
 
 }
