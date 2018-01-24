@@ -7,34 +7,30 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import base.AbstractHibernateService;
-import dao.TableDAO;
+import dao.TeamDAO;
 import object.League;
 import object.MatchDay;
-import object.Table;
 import object.Team;
 
 @Service
-public class TableService extends AbstractHibernateService<Table, String, TableDAO> {
+public class TeamService extends AbstractHibernateService<Team, String, TeamDAO> {
 
 	@Autowired
 	private LeagueService leagueService;
-	private Table table;
+	private HashMap<String, Team> teams;
 
 	@Transactional(readOnly = true)
-	public Table findTableByYear(int year, String leagueName) {
-
+	public HashMap<String, Team> findTeamByMatchDay(int year, String leagueName, int numberMatchday) {
+		
 		League league = leagueService.findLeagueByYear(year, leagueName);
-
-		HashMap<String, Team> teams = new HashMap<String, Team>();
+		return this.calucateTeamsByLeague(league);
+	}
+	
+	private HashMap<String, Team> calucateTeamsByLeague(League league) {
+		teams = new HashMap<String, Team>();
 		for (MatchDay matchDay : league.getMatchDays()) {
 
 		}
-
-		table.setNationName(league.getNation());
-		table.setYear(league.getYearStart() + "/" + league.getYearEnd());
-		table.setLeagueName(league.getName());
-		table.setTeams(teams);
-		return table;
+		return teams;
 	}
-
 }
