@@ -42,7 +42,7 @@ public class BetSystemVMC {
 	@ResponseBody
 	public HashMap<String, Team> teamsByYear(@PathVariable(value = "year") final int year,
 			@PathVariable(value = "league") final String leagueName,@PathVariable(value = "matchday") final String numberMatchday) throws Exception {
-		teams = teamService.findTableByYear(year, leagueName, numberMatchday);
+		teams = teamService.findTeamByMatchDay(year, leagueName, numberMatchday);
 		return teams;
 	}
 }
