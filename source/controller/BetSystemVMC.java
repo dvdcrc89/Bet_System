@@ -30,19 +30,20 @@ public class BetSystemVMC {
 	@Autowired
 	TeamService teamService;
 
+	@RequestMapping(value = "/team/{year}/{league}/{matchday}", method = RequestMethod.POST)
+	@ResponseBody
+	public HashMap<String, Team> teamsByYear(@PathVariable(value = "year") final int year,
+			@PathVariable(value = "league") final String leagueName,
+			@PathVariable(value = "matchday") final int numberMatchday) throws Exception {
+		teams = teamService.findTeamByMatchDay(year, leagueName, numberMatchday);
+		return teams;
+	}
+
 	@RequestMapping(value = "/table/{year}/{league}", method = RequestMethod.POST)
 	@ResponseBody
 	public String tableByYear(@PathVariable(value = "year") final int year,
 			@PathVariable(value = "league") final String leagueName) throws Exception {
 		table = tableService.findTableByYear(year, leagueName);
 		return mapper.writeValueAsString(table);
-	}
-
-	@RequestMapping(value = "/table/{year}/{league}/{matchday}", method = RequestMethod.POST)
-	@ResponseBody
-	public HashMap<String, Team> teamsByYear(@PathVariable(value = "year") final int year,
-			@PathVariable(value = "league") final String leagueName,@PathVariable(value = "matchday") final int numberMatchday) throws Exception {
-		teams = teamService.findTeamByMatchDay(year, leagueName, numberMatchday);
-		return teams;
 	}
 }
