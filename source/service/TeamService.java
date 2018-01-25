@@ -20,7 +20,6 @@ public class TeamService {
 
 	static public ArrayList<Match> calucateForecast(League league) {
 		ArrayList<Match> matches = new ArrayList<Match>();
-		// HashMap<String, Team> teams = calucateTeams(league);
 		return matches;
 	}
 
