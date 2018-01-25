@@ -1,5 +1,7 @@
 package service;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 import base.TeamUtils;
@@ -10,7 +12,19 @@ import object.Team;
 
 public class TeamService {
 
-	static public HashMap<String, Team> calucateTeamsTable(League league) {
+	static public ArrayList<Team> calucateTable(League league) {
+		ArrayList<Team> teams = new ArrayList<Team>(calucateTeams(league).values());
+		Collections.sort(teams);
+		return teams;
+	}
+
+	static public ArrayList<Match> calucateForecast(League league) {
+		ArrayList<Match> matches = new ArrayList<Match>();
+		// HashMap<String, Team> teams = calucateTeams(league);
+		return matches;
+	}
+
+	private static HashMap<String, Team> calucateTeams(League league) {
 		HashMap<String, Team> teams = new HashMap<String, Team>();
 		for (MatchDay matchDay : league.getMatchDays()) {
 			for (Match match : matchDay.getMatches()) {
@@ -40,11 +54,5 @@ public class TeamService {
 			}
 		}
 		return teams;
-	}
-
-	static public HashMap<String, Match> calucateMatchForecast(League league) {
-		HashMap<String, Match> matches = new HashMap<String, Match>();
-		// HashMap<String, Team> teams = TeamService.calucateTeamsTable(league);
-		return matches;
 	}
 }

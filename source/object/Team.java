@@ -2,7 +2,9 @@ package object;
 
 import java.io.Serializable;
 
-public class Team implements Serializable {
+import com.sun.istack.internal.NotNull;
+
+public class Team implements Serializable, Comparable<Team> {
 
 	private static final long serialVersionUID = -3942570304764550707L;
 	private String name;
@@ -190,4 +192,8 @@ public class Team implements Serializable {
 		this.goalLoseAway = goalLoseAway;
 	}
 
+	@Override
+	public int compareTo(@NotNull Team team) {
+		return team.getPoints() - this.points;
+	}
 }

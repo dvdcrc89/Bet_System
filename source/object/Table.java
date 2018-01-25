@@ -1,6 +1,7 @@
 package object;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Table implements Serializable {
@@ -9,7 +10,7 @@ public class Table implements Serializable {
 	private String nationName;
 	private String year;
 	private String leagueName;
-	private HashMap<String, Team> teams;
+	private ArrayList<Team> teams;
 
 	public Table() {
 		super();
@@ -39,11 +40,11 @@ public class Table implements Serializable {
 		this.leagueName = leagueName;
 	}
 
-	public HashMap<String, Team> getTeams() {
+	public ArrayList<Team> getTeams() {
 		return teams;
 	}
 
-	public void setTeams(HashMap<String, Team> teams) {
+	public void setTeams(ArrayList<Team> teams) {
 		this.teams = teams;
 	}
 

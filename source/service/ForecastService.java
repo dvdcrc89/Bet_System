@@ -25,7 +25,7 @@ public class ForecastService extends AbstractHibernateService<Table, String, Tab
 		forecast.setYear(league.getYearStart() + "/" + league.getYearEnd());
 		forecast.setLeagueName(league.getName());
 		forecast.setMatchDay("Giornata ");
-		forecast.setMatches(TeamService.calucateMatchForecast(league));
+		forecast.setMatches(TeamService.calucateForecast(league));
 		return forecast;
 	}
 
@@ -37,7 +37,7 @@ public class ForecastService extends AbstractHibernateService<Table, String, Tab
 		forecast.setYear(league.getYearStart() + "/" + league.getYearEnd());
 		forecast.setLeagueName(league.getName());
 		forecast.setMatchDay("Giornata ");
-		forecast.setMatches(TeamService.calucateMatchForecast(league));
+		forecast.setMatches(TeamService.calucateForecast(league));
 		return forecast;
 	}
 

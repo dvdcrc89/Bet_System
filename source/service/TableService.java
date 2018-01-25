@@ -23,7 +23,7 @@ public class TableService extends AbstractHibernateService<Table, String, TableD
 		table.setNationName(league.getNation());
 		table.setYear(league.getYearStart() + "/" + league.getYearEnd());
 		table.setLeagueName(leagueName);
-		table.setTeams(TeamService.calucateTeamsTable(league));
+		table.setTeams(TeamService.calucateTable(league));
 		return table;
 	}
 
@@ -34,7 +34,7 @@ public class TableService extends AbstractHibernateService<Table, String, TableD
 		table.setNationName(league.getNation());
 		table.setYear(league.getYearStart() + "/" + league.getYearEnd());
 		table.setLeagueName(leagueName);
-		table.setTeams(TeamService.calucateTeamsTable(league));
+		table.setTeams(TeamService.calucateTable(league));
 		return table;
 	}
 

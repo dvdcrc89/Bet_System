@@ -1,7 +1,7 @@
 package object;
 
 import java.io.Serializable;
-import java.util.HashMap;
+import java.util.ArrayList;
 
 public class Forecast implements Serializable {
 
@@ -10,7 +10,7 @@ public class Forecast implements Serializable {
 	private String year;
 	private String leagueName;
 	private String matchDay;
-	private HashMap<String, Match> matches;
+	private ArrayList<Match> matches;
 
 	public Forecast() {
 		super();
@@ -48,11 +48,11 @@ public class Forecast implements Serializable {
 		this.matchDay = matchDay;
 	}
 
-	public HashMap<String, Match> getMatches() {
+	public ArrayList<Match> getMatches() {
 		return matches;
 	}
 
-	public void setMatches(HashMap<String, Match> matches) {
+	public void setMatches(ArrayList<Match> matches) {
 		this.matches = matches;
 	}
 
