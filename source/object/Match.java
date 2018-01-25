@@ -13,6 +13,7 @@ public class Match implements Serializable {
 	private String teamAway;
 	private int goalHome;
 	private int goalAway;
+	private int result;
 
 	public Match() {
 		super();
@@ -80,6 +81,14 @@ public class Match implements Serializable {
 
 	public void setGoalAway(int goalAway) {
 		this.goalAway = goalAway;
+	}
+
+	public int getResult() {
+		return result;
+	}
+
+	public void setResult(int result) {
+		this.result = result;
 	}
 
 }

@@ -3,15 +3,16 @@ package object;
 import java.io.Serializable;
 import java.util.HashMap;
 
-public class Table implements Serializable {
+public class Forecast implements Serializable {
 
-	private static final long serialVersionUID = 7296291866672094507L;
+	private static final long serialVersionUID = 6468806561414435487L;
 	private String nationName;
 	private String year;
 	private String leagueName;
-	private HashMap<String, Team> teams;
+	private String matchDay;
+	private HashMap<String, Match> matches;
 
-	public Table() {
+	public Forecast() {
 		super();
 	}
 
@@ -39,12 +40,20 @@ public class Table implements Serializable {
 		this.leagueName = leagueName;
 	}
 
-	public HashMap<String, Team> getTeams() {
-		return teams;
+	public String getMatchDay() {
+		return matchDay;
 	}
 
-	public void setTeams(HashMap<String, Team> teams) {
-		this.teams = teams;
+	public void setMatchDay(String matchDay) {
+		this.matchDay = matchDay;
+	}
+
+	public HashMap<String, Match> getMatches() {
+		return matches;
+	}
+
+	public void setMatches(HashMap<String, Match> matches) {
+		this.matches = matches;
 	}
 
 }
