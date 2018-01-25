@@ -22,6 +22,8 @@ public class TeamService {
 				} else {
 					Team team = teams.get(match.getTeamHome());
 					team.setPoints(team.getPoints() + TeamUtils.getTeamHomePoints(match));
+
+					teams.replace(match.getTeamHome(), team);
 				}
 
 				if (!teams.containsKey(match.getTeamAway())) {
@@ -32,6 +34,8 @@ public class TeamService {
 				} else {
 					Team team = teams.get(match.getTeamAway());
 					team.setPoints(team.getPoints() + TeamUtils.getTeamAwayPoints(match));
+
+					teams.replace(match.getTeamHome(), team);
 				}
 			}
 		}
