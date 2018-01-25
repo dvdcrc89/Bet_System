@@ -35,6 +35,7 @@ public class BetSystemVMC {
 
 	@RequestMapping(value = "/table/{year}/{league}/", method = RequestMethod.POST)
 	public String tableByYear(@PathVariable(value = "year") int year, @PathVariable(value = "league") String league) {
+
 		Table table = tableService.findTableByYear(year, league);
 		try {
 			return mapper.writeValueAsString(table);
@@ -55,8 +56,21 @@ public class BetSystemVMC {
 		}
 	}
 
+	@RequestMapping(value = "/forecast/{year}/{league}/", method = RequestMethod.POST)
+	public String forecastByLeague(@PathVariable(value = "year") int year,
+			@PathVariable(value = "league") String league) {
+
+		Forecast forecast = forecastService.findForecastByLeague(year, league);
+		try {
+			return mapper.writeValueAsString(forecast);
+		} catch (JsonProcessingException ex) {
+			return null;
+		}
+	}
+
 	@RequestMapping(value = "/teams/{year}/{league}/", method = RequestMethod.POST)
 	public String teamsByYear(@PathVariable(value = "year") int year, @PathVariable(value = "league") String league) {
+
 		HashMap<String, Team> teams = teamService.findTeamsByYear(year, league);
 		try {
 			return mapper.writeValueAsString(teams);
@@ -77,14 +91,4 @@ public class BetSystemVMC {
 		}
 	}
 
-	@RequestMapping(value = "/forecast/{year}/{league}/", method = RequestMethod.POST)
-	public String forecastByYear(@PathVariable(value = "year") int year,
-			@PathVariable(value = "league") String league) {
-		Forecast forecast = forecastService.findForecastByYear(year, league);
-		try {
-			return mapper.writeValueAsString(forecast);
-		} catch (JsonProcessingException ex) {
-			return null;
-		}
-	}
 }

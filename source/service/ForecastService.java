@@ -18,7 +18,7 @@ public class ForecastService extends AbstractHibernateService<Table, String, Tab
 	private Forecast forecast;
 
 	@Transactional(readOnly = true)
-	public Forecast findForecastByYear(int year, String leagueName) {
+	public Forecast findForecastByLeague(int year, String leagueName) {
 		League league = leagueService.findLeagueByYear(year, leagueName);
 		forecast = new Forecast();
 		forecast.setNationName(league.getNation());
