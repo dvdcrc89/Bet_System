@@ -17,6 +17,8 @@ public class TeamService {
 				if (!teams.containsKey(match.getTeamHome())) {
 					Team team = new Team();
 					team.setPoints(TeamUtils.getTeamHomePoints(match));
+
+					teams.put(match.getTeamHome(), team);
 				} else {
 					Team team = teams.get(match.getTeamHome());
 					team.setPoints(team.getPoints() + TeamUtils.getTeamHomePoints(match));
@@ -25,6 +27,8 @@ public class TeamService {
 				if (!teams.containsKey(match.getTeamAway())) {
 					Team team = new Team();
 					team.setPoints(TeamUtils.getTeamAwayPoints(match));
+
+					teams.put(match.getTeamAway(), team);
 				} else {
 					Team team = teams.get(match.getTeamAway());
 					team.setPoints(team.getPoints() + TeamUtils.getTeamAwayPoints(match));
