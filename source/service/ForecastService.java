@@ -18,20 +18,8 @@ public class ForecastService extends AbstractHibernateService<Table, String, Tab
 	private Forecast forecast;
 
 	@Transactional(readOnly = true)
-	public Forecast findTableByYear(int year, String leagueName) {
+	public Forecast findForecastByYear(int year, String leagueName) {
 		League league = leagueService.findLeagueByYear(year, leagueName);
-		forecast = new Forecast();
-		forecast.setNationName(league.getNation());
-		forecast.setYear(league.getYearStart() + "/" + league.getYearEnd());
-		forecast.setLeagueName(league.getName());
-		forecast.setMatchDay("Giornata ");
-		forecast.setMatches(TeamService.calucateForecast(league));
-		return forecast;
-	}
-
-	@Transactional(readOnly = true)
-	public Forecast findTableByMatchDay(int year, String leagueName, int numberMatchDay) {
-		League league = leagueService.findLeagueByMatchDay(year, leagueName, numberMatchDay);
 		forecast = new Forecast();
 		forecast.setNationName(league.getNation());
 		forecast.setYear(league.getYearStart() + "/" + league.getYearEnd());

@@ -25,8 +25,8 @@ public class TeamService {
 	}
 
 	@Transactional(readOnly = true)
-	public HashMap<String, Team> findTeamsByMatchDay(int year, String leagueName) {
-		League league = leagueService.findLeagueByYear(year, leagueName);
+	public HashMap<String, Team> findTeamsByMatchDay(int year, String leagueName, int numberMatchDay) {
+		League league = leagueService.findLeagueByMatchDay(year, leagueName, numberMatchDay);
 		return calucateTeams(league);
 	}
 
