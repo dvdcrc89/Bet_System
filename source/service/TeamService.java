@@ -16,18 +16,18 @@ public class TeamService {
 			for (Match match : matchDay.getMatches()) {
 				if (!teams.containsKey(match.getTeamHome())) {
 					Team team = new Team();
-					team.setPoints(TeamUtils.getTeamPoints(match, "home"));
+					team.setPoints(TeamUtils.getTeamHomePoints(match));
 				} else {
 					Team team = teams.get(match.getTeamHome());
-					team.setPoints(team.getPoints() + TeamUtils.getTeamPoints(match, "home"));
+					team.setPoints(team.getPoints() + TeamUtils.getTeamHomePoints(match));
 				}
 
 				if (!teams.containsKey(match.getTeamAway())) {
 					Team team = new Team();
-					team.setPoints(TeamUtils.getTeamPoints(match, "away"));
+					team.setPoints(TeamUtils.getTeamAwayPoints(match));
 				} else {
 					Team team = teams.get(match.getTeamAway());
-					team.setPoints(team.getPoints() + TeamUtils.getTeamPoints(match, "away"));
+					team.setPoints(team.getPoints() + TeamUtils.getTeamAwayPoints(match));
 				}
 			}
 		}
