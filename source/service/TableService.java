@@ -17,7 +17,7 @@ public class TableService extends AbstractHibernateService<Table, String, TableD
 	private Table table;
 
 	@Transactional(readOnly = true)
-	public Table findTableByYear(int year, String leagueName) {
+	public Table findTableByLeague(int year, String leagueName) {
 		League league = leagueService.findLeagueByYear(year, leagueName);
 		table = new Table();
 		table.setNationName(league.getNation());
@@ -28,7 +28,7 @@ public class TableService extends AbstractHibernateService<Table, String, TableD
 	}
 
 	@Transactional(readOnly = true)
-	public Table findTableByMatchDay(int year, String leagueName, int numberMatchDay) {
+	public Table findTableByLeague(int year, String leagueName, int numberMatchDay) {
 		League league = leagueService.findLeagueByMatchDay(year, leagueName, numberMatchDay);
 		table = new Table();
 		table.setNationName(league.getNation());

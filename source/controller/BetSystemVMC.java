@@ -36,7 +36,7 @@ public class BetSystemVMC {
 	@RequestMapping(value = "/table/{year}/{league}/", method = RequestMethod.POST)
 	public String tableByYear(@PathVariable(value = "year") int year, @PathVariable(value = "league") String league) {
 
-		Table table = tableService.findTableByYear(year, league);
+		Table table = tableService.findTableByLeague(year, league);
 		try {
 			return mapper.writeValueAsString(table);
 		} catch (JsonProcessingException ex) {
@@ -48,7 +48,7 @@ public class BetSystemVMC {
 	public String tableByMatchDay(@PathVariable(value = "year") int year, @PathVariable(value = "league") String league,
 			@PathVariable(value = "matchday") int matchday) {
 
-		Table table = tableService.findTableByMatchDay(year, league, matchday);
+		Table table = tableService.findTableByLeague(year, league, matchday);
 		try {
 			return mapper.writeValueAsString(table);
 		} catch (JsonProcessingException ex) {
@@ -71,7 +71,7 @@ public class BetSystemVMC {
 	@RequestMapping(value = "/teams/{year}/{league}/", method = RequestMethod.POST)
 	public String teamsByYear(@PathVariable(value = "year") int year, @PathVariable(value = "league") String league) {
 
-		HashMap<String, Team> teams = teamService.findTeamsByYear(year, league);
+		HashMap<String, Team> teams = teamService.findTeamsByLeague(year, league);
 		try {
 			return mapper.writeValueAsString(teams);
 		} catch (JsonProcessingException ex) {
@@ -83,7 +83,7 @@ public class BetSystemVMC {
 	public String teamsByMatchDay(@PathVariable(value = "year") int year, @PathVariable(value = "league") String league,
 			@PathVariable(value = "matchday") int matchday) {
 
-		HashMap<String, Team> teams = teamService.findTeamsByMatchDay(year, league, matchday);
+		HashMap<String, Team> teams = teamService.findTeamsByLeague(year, league, matchday);
 		try {
 			return mapper.writeValueAsString(teams);
 		} catch (JsonProcessingException ex) {
