@@ -3,7 +3,7 @@ package base;
 import object.Match;
 
 public class TeamUtils {
-	
+
 	public static int getTeamHomePoints(Match match) {
 		return new TeamUtils().getTeamPoints(match, "home");
 	}
@@ -11,7 +11,7 @@ public class TeamUtils {
 	public static int getTeamAwayPoints(Match match) {
 		return new TeamUtils().getTeamPoints(match, "away");
 	}
-	
+
 	private int getTeamPoints(Match match, String where) {
 		if (where.equals("home")) {
 			return 0;
