@@ -8,181 +8,186 @@ public class Team implements Serializable {
 	private String name;
 	private int points;
 	private int matchPlayed;
-	private int won;
+	private int win;
 	private int lost;
 	private int tie;
-	private int goalF;
-	private int goalS;
+	private int goalMake;
+	private int goalLose;
 	private int matchPlayedHome;
 	private int wonHome;
 	private int lostHome;
 	private int tieHome;
-	private int goalFHome;
-	private int goalSHome;
+	private int goalMakeHome;
+	private int goalLoseHome;
 	private int matchPlayedAway;
 	private int wonAway;
 	private int lostAway;
 	private int tieAway;
-	private int goalFAway;
-	private int goalSAway;
+	private int goalMakeAway;
+	private int goalLoseAway;
+
+	public Team() {
+		super();
+	}
 
 	public String getName() {
 		return name;
-	}
-
-	public int getPoints() {
-		return points;
-	}
-
-	public int getMatchPlayed() {
-		return matchPlayed;
-	}
-
-	public int getWon() {
-		return won;
-	}
-
-	public int getLost() {
-		return lost;
-	}
-
-	public int getTie() {
-		return tie;
-	}
-
-	public int getGoalF() {
-		return goalF;
-	}
-
-	public int getGoalS() {
-		return goalS;
-	}
-
-	public int getMatchPlayedHome() {
-		return matchPlayedHome;
-	}
-
-	public int getWonHome() {
-		return wonHome;
-	}
-
-	public int getLostHome() {
-		return lostHome;
-	}
-
-	public int getTieHome() {
-		return tieHome;
-	}
-
-	public int getGoalFHome() {
-		return goalFHome;
-	}
-
-	public int getGoalSHome() {
-		return goalSHome;
-	}
-
-	public int getMatchPlayedAway() {
-		return matchPlayedAway;
-	}
-
-	public int getWonAway() {
-		return wonAway;
-	}
-
-	public int getLostAway() {
-		return lostAway;
-	}
-
-	public int getTieAway() {
-		return tieAway;
-	}
-
-	public int getGoalFAway() {
-		return goalFAway;
-	}
-
-	public int getGoalSAway() {
-		return goalSAway;
 	}
 
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	public int getPoints() {
+		return points;
+	}
+
 	public void setPoints(int points) {
 		this.points = points;
+	}
+
+	public int getMatchPlayed() {
+		return matchPlayed;
 	}
 
 	public void setMatchPlayed(int matchPlayed) {
 		this.matchPlayed = matchPlayed;
 	}
 
-	public void setWon(int won) {
-		this.won = won;
+	public int getWin() {
+		return win;
+	}
+
+	public void setWin(int win) {
+		this.win = win;
+	}
+
+	public int getLost() {
+		return lost;
 	}
 
 	public void setLost(int lost) {
 		this.lost = lost;
 	}
 
+	public int getTie() {
+		return tie;
+	}
+
 	public void setTie(int tie) {
 		this.tie = tie;
 	}
 
-	public void setGoalF(int goalF) {
-		this.goalF = goalF;
+	public int getGoalMake() {
+		return goalMake;
 	}
 
-	public void setGoalS(int goalS) {
-		this.goalS = goalS;
+	public void setGoalMake(int goalMake) {
+		this.goalMake = goalMake;
+	}
+
+	public int getGoalLose() {
+		return goalLose;
+	}
+
+	public void setGoalLose(int goalLose) {
+		this.goalLose = goalLose;
+	}
+
+	public int getMatchPlayedHome() {
+		return matchPlayedHome;
 	}
 
 	public void setMatchPlayedHome(int matchPlayedHome) {
 		this.matchPlayedHome = matchPlayedHome;
 	}
 
+	public int getWonHome() {
+		return wonHome;
+	}
+
 	public void setWonHome(int wonHome) {
 		this.wonHome = wonHome;
+	}
+
+	public int getLostHome() {
+		return lostHome;
 	}
 
 	public void setLostHome(int lostHome) {
 		this.lostHome = lostHome;
 	}
 
+	public int getTieHome() {
+		return tieHome;
+	}
+
 	public void setTieHome(int tieHome) {
 		this.tieHome = tieHome;
 	}
 
-	public void setGoalFHome(int goalFHome) {
-		this.goalFHome = goalFHome;
+	public int getGoalMakeHome() {
+		return goalMakeHome;
 	}
 
-	public void setGoalSHome(int goalSHome) {
-		this.goalSHome = goalSHome;
+	public void setGoalMakeHome(int goalMakeHome) {
+		this.goalMakeHome = goalMakeHome;
+	}
+
+	public int getGoalLoseHome() {
+		return goalLoseHome;
+	}
+
+	public void setGoalLoseHome(int goalLoseHome) {
+		this.goalLoseHome = goalLoseHome;
+	}
+
+	public int getMatchPlayedAway() {
+		return matchPlayedAway;
 	}
 
 	public void setMatchPlayedAway(int matchPlayedAway) {
 		this.matchPlayedAway = matchPlayedAway;
 	}
 
+	public int getWonAway() {
+		return wonAway;
+	}
+
 	public void setWonAway(int wonAway) {
 		this.wonAway = wonAway;
+	}
+
+	public int getLostAway() {
+		return lostAway;
 	}
 
 	public void setLostAway(int lostAway) {
 		this.lostAway = lostAway;
 	}
 
+	public int getTieAway() {
+		return tieAway;
+	}
+
 	public void setTieAway(int tieAway) {
 		this.tieAway = tieAway;
 	}
 
-	public void setGoalFAway(int goalFAway) {
-		this.goalFAway = goalFAway;
+	public int getGoalMakeAway() {
+		return goalMakeAway;
 	}
 
-	public void setGoalSAway(int goalSAway) {
-		this.goalSAway = goalSAway;
+	public void setGoalMakeAway(int goalMakeAway) {
+		this.goalMakeAway = goalMakeAway;
 	}
+
+	public int getGoalLoseAway() {
+		return goalLoseAway;
+	}
+
+	public void setGoalLoseAway(int goalLoseAway) {
+		this.goalLoseAway = goalLoseAway;
+	}
+
 }

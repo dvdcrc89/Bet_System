@@ -2,14 +2,35 @@ package service;
 
 import java.util.HashMap;
 
+import base.TeamUtils;
 import object.League;
 import object.Match;
+import object.MatchDay;
 import object.Team;
 
 public class TeamService {
 
 	static public HashMap<String, Team> calucateTeamsTable(League league) {
 		HashMap<String, Team> teams = new HashMap<String, Team>();
+		for (MatchDay matchDay : league.getMatchDays()) {
+			for (Match match : matchDay.getMatches()) {
+				if (!teams.containsKey(match.getTeamHome())) {
+					Team team = new Team();
+					team.setPoints(TeamUtils.getTeamPoints(match, "home"));
+				} else {
+					Team team = teams.get(match.getTeamHome());
+					team.setPoints(team.getPoints() + TeamUtils.getTeamPoints(match, "home"));
+				}
+
+				if (!teams.containsKey(match.getTeamAway())) {
+					Team team = new Team();
+					team.setPoints(TeamUtils.getTeamPoints(match, "away"));
+				} else {
+					Team team = teams.get(match.getTeamAway());
+					team.setPoints(team.getPoints() + TeamUtils.getTeamPoints(match, "away"));
+				}
+			}
+		}
 		return teams;
 	}
 
