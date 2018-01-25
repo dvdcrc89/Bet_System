@@ -24,7 +24,7 @@ public class TeamService {
 
 				if (!teams.containsKey(match.getTeamAway())) {
 					Team team = new Team();
-					team.setName(match.getTeamHome());
+					team.setName(match.getTeamAway());
 					team = TeamUtils.updateTeam(team, match);
 					teams.put(match.getTeamAway(), team);
 				}
