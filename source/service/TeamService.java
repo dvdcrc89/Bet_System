@@ -14,29 +14,31 @@ public class TeamService {
 		HashMap<String, Team> teams = new HashMap<String, Team>();
 		for (MatchDay matchDay : league.getMatchDays()) {
 			for (Match match : matchDay.getMatches()) {
+
 				if (!teams.containsKey(match.getTeamHome())) {
 					Team team = new Team();
-					team.setPoints(TeamUtils.getTeamHomePoints(match));
-
+					team.setName(match.getTeamHome());
+					team = TeamUtils.updateTeam(team, match);
 					teams.put(match.getTeamHome(), team);
-				} else {
-					Team team = teams.get(match.getTeamHome());
-					team.setPoints(team.getPoints() + TeamUtils.getTeamHomePoints(match));
-
-					teams.replace(match.getTeamHome(), team);
 				}
 
 				if (!teams.containsKey(match.getTeamAway())) {
 					Team team = new Team();
-					team.setPoints(TeamUtils.getTeamAwayPoints(match));
-
+					team.setName(match.getTeamHome());
+					team = TeamUtils.updateTeam(team, match);
 					teams.put(match.getTeamAway(), team);
-				} else {
-					Team team = teams.get(match.getTeamAway());
-					team.setPoints(team.getPoints() + TeamUtils.getTeamAwayPoints(match));
+				}
 
+				if (teams.containsKey(match.getTeamHome())) {
+					Team team = TeamUtils.updateTeam(teams.get(match.getTeamHome()), match);
 					teams.replace(match.getTeamHome(), team);
 				}
+
+				if (teams.containsKey(match.getTeamAway())) {
+					Team team = TeamUtils.updateTeam(teams.get(match.getTeamAway()), match);
+					teams.replace(match.getTeamAway(), team);
+				}
+
 			}
 		}
 		return teams;
