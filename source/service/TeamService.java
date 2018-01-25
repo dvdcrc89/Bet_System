@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
+
 import base.TeamUtils;
 import object.League;
 import object.Match;
@@ -11,6 +14,21 @@ import object.MatchDay;
 import object.Team;
 
 public class TeamService {
+
+	@Autowired
+	private LeagueService leagueService;
+
+	@Transactional(readOnly = true)
+	public HashMap<String, Team> findTeamsByYear(int year, String leagueName) {
+		League league = leagueService.findLeagueByYear(year, leagueName);
+		return calucateTeams(league);
+	}
+
+	@Transactional(readOnly = true)
+	public HashMap<String, Team> findTeamsByMatchDay(int year, String leagueName) {
+		League league = leagueService.findLeagueByYear(year, leagueName);
+		return calucateTeams(league);
+	}
 
 	static public ArrayList<Team> calucateTable(League league) {
 		ArrayList<Team> teams = new ArrayList<Team>(calucateTeams(league).values());
@@ -24,6 +42,7 @@ public class TeamService {
 	}
 
 	private static HashMap<String, Team> calucateTeams(League league) {
+
 		HashMap<String, Team> teams = new HashMap<String, Team>();
 		for (MatchDay matchDay : league.getMatchDays()) {
 			for (Match match : matchDay.getMatches()) {
@@ -52,6 +71,7 @@ public class TeamService {
 
 			}
 		}
+
 		return teams;
 	}
 }
