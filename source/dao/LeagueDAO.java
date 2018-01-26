@@ -39,7 +39,7 @@ public class LeagueDAO extends AbstractHibernateDAO<League, String> {
 		List<Criterion> criterions = new ArrayList<Criterion>();
 		criterions.add(Restrictions.eq("yearEnd", year));
 		criterions.add(Restrictions.eq("name", leagueName));
-		criterions.add(Restrictions.ge("matchday", numberMatchDay));
+		criterions.add(Restrictions.le("matchday", numberMatchDay));
 
 		List<Order> orders = new ArrayList<Order>();
 		orders.add(Order.asc("matchday.number"));

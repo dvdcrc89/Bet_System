@@ -34,7 +34,7 @@ public class BetSystemVMC {
 	private ForecastService forecastService;
 
 	@RequestMapping(value = "/table/{year}/{league}/", method = RequestMethod.POST)
-	public String tableByYear(@PathVariable(value = "year") int year, @PathVariable(value = "league") String league) {
+	public String tableByLeague(@PathVariable(value = "year") int year, @PathVariable(value = "league") String league) {
 
 		Table table = tableService.findTableByLeague(year, league);
 		try {
@@ -45,7 +45,7 @@ public class BetSystemVMC {
 	}
 
 	@RequestMapping(value = "/table/{year}/{league}/{matchday}", method = RequestMethod.POST)
-	public String tableByMatchDay(@PathVariable(value = "year") int year, @PathVariable(value = "league") String league,
+	public String tableByLeague(@PathVariable(value = "year") int year, @PathVariable(value = "league") String league,
 			@PathVariable(value = "matchday") int matchday) {
 
 		Table table = tableService.findTableByLeague(year, league, matchday);
@@ -69,7 +69,7 @@ public class BetSystemVMC {
 	}
 
 	@RequestMapping(value = "/teams/{year}/{league}/", method = RequestMethod.POST)
-	public String teamsByYear(@PathVariable(value = "year") int year, @PathVariable(value = "league") String league) {
+	public String teamsByLeague(@PathVariable(value = "year") int year, @PathVariable(value = "league") String league) {
 
 		HashMap<String, Team> teams = teamService.findTeamsByLeague(year, league);
 		try {
@@ -80,7 +80,7 @@ public class BetSystemVMC {
 	}
 
 	@RequestMapping(value = "/teams/{year}/{league}/{matchday}", method = RequestMethod.POST)
-	public String teamsByMatchDay(@PathVariable(value = "year") int year, @PathVariable(value = "league") String league,
+	public String teamsByLeague(@PathVariable(value = "year") int year, @PathVariable(value = "league") String league,
 			@PathVariable(value = "matchday") int matchday) {
 
 		HashMap<String, Team> teams = teamService.findTeamsByLeague(year, league, matchday);
