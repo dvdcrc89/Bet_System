@@ -40,8 +40,8 @@ public class TeamService extends AbstractHibernateService<Team, String, TeamDAO>
 	}
 
 	static public ArrayList<Match> calucateForecast(League league) {
-		ArrayList<Match> matches = new ArrayList<Match>(); // Partite da Pronosticare. Immagina di avere il calendario
-															// nel database
+		// Partite da Pronosticare. Immagina di avere il calendario nel database
+		ArrayList<Match> matches = new ArrayList<Match>();
 		for (Team team : calucateTeams(league).values()) {
 
 		}
